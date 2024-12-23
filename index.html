@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology Assignment 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Web Technology Assignment 1</h1>
+            <p class="hero-text">Professional Profiles</p>
+            <div class="hero-buttons">
+                <button class="info-btn" onclick="showAssignmentInfo()">
+                    <i class="fas fa-info-circle"></i> More Info
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="profiles-section">
+        <h2>Students Profiles</h2>
+        <div class="episodes-grid">
+            <div class="episode" onclick="showProfile(0)">
+                <div class="episode-info">
+                    <h3>Sanath U</h3>
+                    <span class="duration">1SG22CS085</span>
+                </div>
+            </div>
+            <div class="episode" onclick="showProfile(1)">
+                <div class="episode-info">
+                    <h3>Niteesh Kumar U K</h3>
+                    <span class="duration">1SG22CS065</span>
+                </div>
+            </div>
+            <div class="episode" onclick="showProfile(2)">
+                <div class="episode-info">
+                    <h3>Sangmesh</h3>
+                    <span class="duration">1SG22CS087</span>
+                </div>
+            </div>
+            <div class="episode" onclick="showProfile(3)">
+                <div class="episode-info">
+                    <h3>Srinivas K T </h3>
+                    <span class="duration">1SG22CS0106</span>
+                </div>
+            </div>
+            <div class="episode" onclick="showProfile(4)">
+                <div class="episode-info">
+                    <h3>Srujan Kumar D</h3>
+                    <span class="duration">1SG22CS105</span>
+                </div>
+            </div>
+            <div class="episode" onclick="showProfile(5)">
+                <div class="episode-info">
+                    <h3>Yeshwanth H K</h3>
+                    <span class="duration">1SG22CS126</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="assignmentModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAssignmentModal()">&times;</span>
+            <div class="modal-body assignment-info">
+                <h2>Web Technology Assignment 1</h2>
+                <div class="assignment-details">
+                    <p><strong>Course:</strong> Web Technology</p>
+                    <p><strong>Assignment:</strong> Construct a Website (multiple Web pages) containing 'Resume' and Bio-data by using relevant HTML elements and appropriate styling for presentation with CSS/jQuery/JavaScript. Host the Website on a cloud platform.</p>
+                    <p><strong>Lecturer:</strong> Prof Hemalatha K</p>
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>Netflix-inspired UI/UX design</li>
+                        <li>Interactive profile cards</li>
+                        <li>Detailed resume modal views</li>
+                        <li>Responsive layout</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
